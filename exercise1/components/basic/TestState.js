@@ -41,7 +41,7 @@ export default class TestState extends Component {
         <Text style={styles.display1}>{this.state.title}</Text>
         
         {/* if use onChangeText => onChangeText={(title) => this.setState({title})}  */}
-        <TextInput style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+        <TextInput style={{height: 50, borderColor: 'gray', borderWidth: 1}}
         onChange={this._changeTitle} value={this.state.title} />
         
       </View>
