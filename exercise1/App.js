@@ -8,7 +8,8 @@
 
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import Blink from './components/basic/Blink';
+import CustomStyle from './components/basic/Style';
+// import Blink from './components/basic/Blink';
 // import Bananas from './components/basic/Bananas';
 // import Hello from './components/basic/Hello';
 
@@ -16,7 +17,7 @@ export default class App extends Component {
     render() {
       return (
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-          <Blink></Blink>
+          <CustomStyle></CustomStyle>
         </View>
       );
     }
