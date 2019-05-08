@@ -7,8 +7,9 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, View} from 'react-native';
 import Hello from './components/basic/Hello';
+import Bananas from './components/basic/Bananas';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,12 +20,21 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  componentWillMount(){
+    console.log("WillMount");    
+  }
+
+  componentDidMount(){
+    console.log("DidMount");
+  }
+
   render() {
     return (
-      // <View style={styles.container}>
-      //   <Text style={styles.welcome}>Hello Ikhsan</Text>
-      // </View>
-      <Hello></Hello>
+      <View style={styles.container}>
+        <Bananas></Bananas>
+        <Hello style={styles.welcome}></Hello>
+      </View>
     );
   }
 }
