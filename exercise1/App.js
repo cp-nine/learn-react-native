@@ -8,14 +8,15 @@
 
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import Bananas from './components/basic/Bananas';
+import Blink from './components/basic/Blink';
+// import Bananas from './components/basic/Bananas';
 // import Hello from './components/basic/Hello';
 
 export default class App extends Component {
     render() {
       return (
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-          <Bananas></Bananas>
+          <Blink></Blink>
         </View>
       );
     }
