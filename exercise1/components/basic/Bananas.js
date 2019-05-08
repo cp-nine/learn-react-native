@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Text, Image} from 'react-native';
+import {StyleSheet, View, Text, Image, Button} from 'react-native';
 
 class Kinds extends Component {
   render(){
@@ -12,6 +12,7 @@ class Kinds extends Component {
 }
 
 export default class Bananas extends Component {
+
   render(){
     let pic = {
       uri: 'https://images.pexels.com/photos/461208/pexels-photo-461208.jpeg'
@@ -25,6 +26,7 @@ export default class Bananas extends Component {
 
         <Kinds id='1' name='King Banana'/>
         <Kinds id='2' name='Gold Banana'/>
+        
       </View>
     );
   }
