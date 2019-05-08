@@ -7,27 +7,16 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, View} from 'react-native';
-import {createStackNavigator, createAppContainer} from 'react-navigation';
-import Hello from './components/basic/Hello';
+import {View} from 'react-native';
 import Bananas from './components/basic/Bananas';
-import TestState from './components/basic/TestState';
-import TestProps from './components/basic/TestProps';
+// import Hello from './components/basic/Hello';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-
-const RootStack = createStackNavigator({
-  Home: {screen: Hello},
-  Result: {screen: Bananas}
-});
-
-const App = createAppContainer(RootStack);
-
-export default App; 
+export default class App extends Component {
+    render() {
+      return (
+        <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+          <Bananas></Bananas>
+        </View>
+      );
+    }
+}
