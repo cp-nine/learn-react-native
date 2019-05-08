@@ -5,7 +5,9 @@ class BananaTypes extends Component {
   render(){
     return (
       <View style={styles.bananaType}>
-        <Text style={styles.display1}>{this.props.name}</Text>        
+
+        <Text style={styles.display1}>{this.props.name}</Text>     
+
       </View>
     );
   }
@@ -17,9 +19,11 @@ export default class TestProps extends Component {
     console.log("Render Component");
     return (
       <View style={{alignItems: 'center', top: 50}}>
+
         <Text>Test Props</Text>
         <BananaTypes name='King banana'/>
-        <BananaTypes name='Kepok banana'/>        
+        <BananaTypes name='Kepok banana'/>   
+             
       </View>
     );
   }

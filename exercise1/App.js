@@ -24,8 +24,8 @@ const instructions = Platform.select({
 type Props = {};
 
 const RootStack = createStackNavigator({
-  Home: {screen: MainPage},
-  Result: {screen: SearchResultPage}
+  Home: {screen: Hello},
+  Result: {screen: Bananas}
 });
 
 const App = createAppContainer(RootStack);
