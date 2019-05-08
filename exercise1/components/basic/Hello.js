@@ -5,7 +5,7 @@ export default class Hello extends Component {
   render(){
     return (
     <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
-      <Text>Hello Ikhsan Fauji</Text>
+      <Text>Hello Coder</Text>
     </View>
     );
   }
